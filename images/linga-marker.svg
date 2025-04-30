@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>Linga Marker</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle fill="#F8A100" cx="14" cy="14" r="14"></circle>
+        <rect fill="#FFFFFF" x="10" y="7" width="8" height="14" rx="2"></rect>
+        <rect fill="#F8A100" x="12" y="9" width="4" height="10" rx="1"></rect>
+    </g>
+</svg>

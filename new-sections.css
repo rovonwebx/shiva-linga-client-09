@@ -1,0 +1,958 @@
+/* Types of Shiva Lingas Section */
+.types-section {
+    position: relative;
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.types-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background: url('https://img.freepik.com/free-photo/white-marble-texture-background_24076-358.jpg?w=1380&t=st=1693308200~exp=1693308800~hmac=5e7c4f4c5c7f2b6d4c5c7f2b6d4c5c7f2b6d4c5c7f2b6d4c5c7f2b6d4c5c7f');
+    background-size: cover;
+    background-position: center;
+}
+
+.types-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.section-description {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+.types-carousel-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    overflow: hidden;
+}
+
+.types-carousel {
+    display: flex;
+    gap: 30px;
+    transition: transform 0.5s ease;
+}
+
+.type-card {
+    min-width: calc(25% - 22.5px);
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.type-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-front {
+    background-color: white;
+}
+
+.card-back {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    color: white;
+    transform: rotateY(180deg);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+    height: 300px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.type-card:hover .card-image img {
+    transform: scale(1.1);
+}
+
+.card-label {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-label h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+}
+
+.card-tag {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: rgba(255, 119, 0, 0.1);
+    color: var(--primary-color);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.card-back h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-details p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.card-features {
+    list-style: none;
+    margin-top: auto;
+}
+
+.card-features li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.card-features li i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.nav-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-dot.active {
+    background-color: var(--primary-color);
+    transform: scale(1.2);
+}
+
+.types-info {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid var(--primary-color);
+}
+
+.info-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.info-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+}
+
+.info-content p {
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* Sacred Geography Section */
+.geography-section {
+    position: relative;
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.geography-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background: url('https://img.freepik.com/free-photo/old-paper-texture_1194-6201.jpg?w=1380&t=st=1693308300~exp=1693308900~hmac=5e7c4f4c5c7f2b6d4c5c7f2b6d4c5c7f2b6d4c5c7f2b6d4c5c7f2b6d4c5c7f');
+    background-size: cover;
+    background-position: center;
+}
+
+.geography-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.geography-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.map-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+.map-wrapper {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.map-image {
+    width: 100%;
+    display: block;
+}
+
+.map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+}
+
+.map-marker {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.marker-dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.marker-pulse {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 119, 0, 0.4);
+    border-radius: 50%;
+    z-index: 1;
+    animation: pulse 2s infinite;
+}
+
+.marker-label {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.map-marker:hover .marker-label {
+    opacity: 1;
+}
+
+.map-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.legend-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    margin-right: 8px;
+    font-size: 0.8rem;
+}
+
+.legend-text {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.geography-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.info-tabs {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.tab-buttons {
+    display: flex;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.tab-btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.tab-btn:hover {
+    color: var(--primary-color);
+}
+
+.tab-btn.active {
+    color: var(--primary-color);
+}
+
+.tab-btn.active::after {
+    width: 80%;
+}
+
+.tab-content {
+    padding: 30px;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+.tab-pane h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+}
+
+.tab-pane p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+.info-highlight {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+    background-color: rgba(255, 119, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.info-highlight i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.info-highlight p {
+    margin: 0;
+    font-style: italic;
+}
+
+.jyotirlinga-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    list-style: none;
+}
+
+.jyotirlinga-list li {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.jyotirlinga-list li i {
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+.pilgrimage-cta {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Gallery Section */
+.gallery-section {
+    position: relative;
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.gallery-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background: url('https://img.freepik.com/free-photo/white-concrete-wall_53876-92803.jpg?w=1380&t=st=1693308400~exp=1693308900~hmac=5e7c4f4c5c7f2b6d4c5c7f2b6d4c5c7f2b6d4c5c7f2b6d4c5c7f2b6d4c5c7f');
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.gallery-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    padding: 8px 20px;
+    background: none;
+    border: 1px solid var(--border-color);
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: rgba(255, 119, 0, 0.1);
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.filter-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.gallery-masonry {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.gallery-item {
+    break-inside: avoid;
+    margin-bottom: 30px;
+}
+
+.gallery-item.featured {
+    grid-column: span 2;
+}
+
+.gallery-item-inner {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item-inner:hover {
+    transform: translateY(-10px);
+}
+
+.gallery-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item.featured .gallery-image {
+    height: 400px;
+}
+
+.gallery-item-inner:hover .gallery-image {
+    transform: scale(1.1);
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+    color: white;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item-inner:hover .gallery-caption {
+    transform: translateY(0);
+}
+
+.gallery-caption h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.gallery-caption p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.gallery-tag {
+    display: inline-block;
+    padding: 3px 10px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item-inner:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.overlay-content {
+    text-align: center;
+    color: white;
+}
+
+.overlay-content i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.overlay-content span {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.gallery-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    overflow: auto;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 80%;
+    margin: 50px auto;
+    animation: zoomIn 0.3s ease;
+}
+
+.modal-close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.modal-close:hover {
+    color: var(--primary-color);
+}
+
+.modal-image {
+    width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+.modal-caption {
+    padding: 20px;
+    background-color: white;
+    color: var(--text-color);
+}
+
+.modal-prev, .modal-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.modal-prev {
+    left: -70px;
+}
+
+.modal-next {
+    right: -70px;
+}
+
+.modal-prev:hover, .modal-next:hover {
+    background: var(--primary-color);
+}
+
+.gallery-cta {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    background: none;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(0.8);
+        opacity: 0.8;
+    }
+    70% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(0.8);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .type-card {
+        min-width: calc(50% - 15px);
+    }
+    
+    .geography-content {
+        flex-direction: column;
+    }
+    
+    .jyotirlinga-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-item.featured {
+        grid-column: span 1;
+    }
+    
+    .gallery-item.featured .gallery-image {
+        height: 300px;
+    }
+    
+    .modal-content {
+        max-width: 90%;
+    }
+    
+    .modal-prev {
+        left: -50px;
+    }
+    
+    .modal-next {
+        right: -50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .type-card {
+        min-width: 100%;
+    }
+    
+    .card-inner {
+        height: 400px;
+    }
+    
+    .map-marker .marker-label {
+        opacity: 1;
+    }
+    
+    .gallery-masonry {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    
+    .gallery-caption {
+        transform: translateY(0);
+        padding: 15px;
+    }
+    
+    .gallery-caption h3 {
+        font-size: 1.1rem;
+    }
+    
+    .gallery-caption p {
+        display: none;
+    }
+    
+    .modal-prev, .modal-next {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
+    .modal-prev {
+        left: 10px;
+    }
+    
+    .modal-next {
+        right: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-description {
+        font-size: 1rem;
+    }
+    
+    .card-inner {
+        height: 380px;
+    }
+    
+    .card-image {
+        height: 250px;
+    }
+    
+    .info-box {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .tab-btn {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .tab-content {
+        padding: 20px;
+    }
+    
+    .gallery-filter {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .gallery-masonry {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-image {
+        height: 250px;
+    }
+    
+    .gallery-item.featured .gallery-image {
+        height: 250px;
+    }
+    
+    .modal-content {
+        max-width: 95%;
+        margin: 70px auto;
+    }
+}

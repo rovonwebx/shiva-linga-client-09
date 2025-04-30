@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacred Shiva Linga Locations in India</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="map-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-om"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>Shiva Linga</h1>
+                    <p>Sacred Symbol of Divine Energy</p>
+                </div>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#history">History</a></li>
+                    <li><a href="index.html#significance">Significance</a></li>
+                    <li><a href="index.html#types">Types</a></li>
+                    <li><a href="map.html" class="active">Sacred Map</a></li>
+                    <li><a href="index.html#gallery">Gallery</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Map Hero Section -->
+    <section class="map-hero">
+        <div class="container">
+            <div class="map-hero-content">
+                <h2>Sacred Geography of Shiva</h2>
+                <p>Discover the sacred Shiva Linga locations across India, including the revered Jyotirlingas and other historically significant sites</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-container">
+                <div id="indiaMap"></div>
+                <div class="map-sidebar">
+                    <h3>Jyotirlinga Temples</h3>
+                    <p>The 12 Jyotirlingas are sacred abodes of Lord Shiva where he is believed to have appeared as a fiery column of light.</p>
+                    
+                    <div class="linga-list">
+                        <div class="linga-item" data-id="somnath">
+                            <h4>Somnath, Gujarat</h4>
+                            <p>One of the oldest and most revered Jyotirlingas, located on the western coast of Gujarat.</p>
+                        </div>
+                        <div class="linga-item" data-id="mallikarjuna">
+                            <h4>Mallikarjuna, Andhra Pradesh</h4>
+                            <p>Located on the Shri Sailam mountain ranges, also known as Sri Sailam.</p>
+                        </div>
+                        <div class="linga-item" data-id="mahakaleshwar">
+                            <h4>Mahakaleshwar, Madhya Pradesh</h4>
+                            <p>Located in the ancient city of Ujjain, famous for its unique south-facing Linga.</p>
+                        </div>
+                        <div class="linga-item" data-id="omkareshwar">
+                            <h4>Omkareshwar, Madhya Pradesh</h4>
+                            <p>Situated on an island in the Narmada River, shaped like the sacred Om symbol.</p>
+                        </div>
+                        <div class="linga-item" data-id="kedarnath">
+                            <h4>Kedarnath, Uttarakhand</h4>
+                            <p>Located in the Himalayan ranges, accessible only for six months a year due to extreme weather.</p>
+                        </div>
+                        <div class="linga-item" data-id="bhimashankar">
+                            <h4>Bhimashankar, Maharashtra</h4>
+                            <p>Located in the Sahyadri ranges, surrounded by wildlife sanctuary and dense forests.</p>
+                        </div>
+                        <div class="linga-item" data-id="vishwanath">
+                            <h4>Kashi Vishwanath, Uttar Pradesh</h4>
+                            <p>Located in the holy city of Varanasi, one of the most famous Shiva temples in India.</p>
+                        </div>
+                        <div class="linga-item" data-id="trimbakeshwar">
+                            <h4>Trimbakeshwar, Maharashtra</h4>
+                            <p>Located near the source of the Godavari River, features a unique three-faced Linga.</p>
+                        </div>
+                        <div class="linga-item" data-id="vaidyanath">
+                            <h4>Vaidyanath, Jharkhand</h4>
+                            <p>Also known as Baidyanath Dham, one of the most revered Shaktipeeths as well.</p>
+                        </div>
+                        <div class="linga-item" data-id="nageshwar">
+                            <h4>Nageshwar, Gujarat</h4>
+                            <p>Located near Dwarka, believed to protect devotees from all poisons and snake bites.</p>
+                        </div>
+                        <div class="linga-item" data-id="rameshwaram">
+                            <h4>Rameshwaram, Tamil Nadu</h4>
+                            <p>Located on Rameshwaram island, associated with Lord Rama's return from Lanka.</p>
+                        </div>
+                        <div class="linga-item" data-id="grishneshwar">
+                            <h4>Grishneshwar, Maharashtra</h4>
+                            <p>Located near Ellora Caves, the smallest Jyotirlinga temple but of great significance.</p>
+                        </div>
+                    </div>
+                    
+                    <h3>Other Significant Lingas</h3>
+                    <div class="linga-list">
+                        <div class="linga-item" data-id="amarnath">
+                            <h4>Amarnath, Jammu & Kashmir</h4>
+                            <p>Famous for its natural ice Linga that forms and dissolves with seasons.</p>
+                        </div>
+                        <div class="linga-item" data-id="pashupatinath">
+                            <h4>Pashupatinath, Nepal</h4>
+                            <p>Though in Nepal, it's culturally significant to Indian spiritual geography.</p>
+                        </div>
+                        <div class="linga-item" data-id="lingaraj">
+                            <h4>Lingaraj Temple, Odisha</h4>
+                            <p>One of the oldest temples in Bhubaneswar, representing Shiva as Tribhuvaneshwara.</p>
+                        </div>
+                        <div class="linga-item" data-id="murudeshwar">
+                            <h4>Murudeshwar, Karnataka</h4>
+                            <p>Features the world's second-tallest Shiva statue and a magnificent temple by the Arabian Sea.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Information Section -->
+    <section class="map-info-section">
+        <div class="container">
+            <h2 class="section-title">The Sacred Geography</h2>
+            <div class="section-content">
+                <div class="text-content">
+                    <p>The concept of sacred geography in Hinduism places Shiva Lingas at specific power points across the Indian subcontinent. These locations are believed to be where the divine energy of Lord Shiva is particularly concentrated and accessible to devotees.</p>
+                    <p>The 12 Jyotirlingas form a sacred geometric pattern across India, creating a spiritual network that encompasses the entire country. Each Jyotirlinga has its own unique legend and significance, often connected to local geography and cultural history.</p>
+                    <p>Beyond the Jyotirlingas, thousands of other Shiva temples with significant Lingas dot the landscape of India, making it one of the most extensive sacred geographies in the world. Many of these sites are associated with natural features like mountains, rivers, and caves, highlighting the deep connection between Shaivism and nature worship.</p>
+                </div>
+                <div class="image-content">
+                    <img src="https://media.istockphoto.com/id/511674790/photo/shiva-linga-made-up-of-black-stone-mahashivratri.jpg?s=612x612&w=0&k=20&c=f4ipsRKVmACcWVi9CQ8yB73UmXhV75KB3x7nFA1LFVQ=" alt="Spiritual Map of India" class="section-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="footer-logo-top">
+                        <div class="footer-logo-icon">
+                            <i class="fas fa-om"></i>
+                        </div>
+                        <h3>Shiva Linga</h3>
+                    </div>
+                    <p>Discover the profound spiritual significance of the Shiva Linga, a sacred symbol representing the divine cosmic energy of Lord Shiva in Hindu tradition. Explore its rich history, diverse forms, and cultural importance.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#history">History</a></li>
+                        <li><a href="index.html#significance">Significance</a></li>
+                        <li><a href="index.html#types">Types</a></li>
+                        <li><a href="map.html">Sacred Map</a></li>
+                        <li><a href="index.html#gallery">Gallery</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Explore More</h4>
+                    <ul>
+                        <li><a href="#">Jyotirlinga Temples</a></li>
+                        <li><a href="#">Meditation Practices</a></li>
+                        <li><a href="#">Shiva Mantras</a></li>
+                        <li><a href="#">Sacred Rituals</a></li>
+                        <li><a href="#">Mythology</a></li>
+                        <li><a href="#">Festivals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Connected</h4>
+                    <p>Subscribe to our newsletter to receive updates on sacred sites, upcoming festivals, and spiritual insights related to Shiva Linga worship.</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Shiva Linga | All Rights Reserved | Designed with <i class="fas fa-heart" style="color: var(--primary-color);"></i> by Team shivalinga | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="script.js"></script>
+    <script src="map-script.js"></script>
+</body>
+</html>
